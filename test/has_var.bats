@@ -1,8 +1,9 @@
+load_plugin bats_matchers
+
 setup() {
   matcher_test_var='matcher_test_value'
 }
 
-context bla
 @test 'provides has_var' {
   has_var matcher_test_var matcher_test_value
 }
